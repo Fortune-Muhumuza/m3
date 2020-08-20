@@ -1,0 +1,37 @@
+html
+    head
+        title muse
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css")
+        script(defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js")
+        link(rel="stylesheet", href="./css/style.css")
+
+    body
+        nav(class="navbar", role="navigation", aria-label="main navigation")
+            div(class="navbar-brand")
+                a(class="navbar-item", href="/")
+                    i(class="fas fa-music")
+
+            div(class="navbar-end")
+                div(class="navbar-item")
+                    if user
+                        div(class="buttons")
+                            a(class="button is-light", href="/@" + user.username)
+                                string=user.username
+                            a(class="button is-light", href="/settings")
+                                i(class="fas fa-cog")
+                            a(class="button is-dark", href="/logout")
+                                i(class="fas fa-sign-out-alt")
+                    else
+                        div(class="buttons")
+                            a(class="button is-primary", href="/signup")
+                                strong Sign up
+                            a(class="button is-light", href="/login")
+                                strong Log in
+
+        hr
+        
+        block content
+    footer
+        p &copy; #[a(href="/about") m3] inc.

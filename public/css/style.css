@@ -1,0 +1,23 @@
+body {
+    margin: 15px;
+    padding: 15px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 0 10px 0 10px;
+    margin: 0 5px 0 5px;
+    width: 200px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px 0 10px 0;
+}
+
+nav input.button.is-link {
+    margin: 0 10px 0 10px;
+}
+
+footer {
+    margin-top: 80px;
+}

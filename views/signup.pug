@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    div(class="field")
+        form(action="/signup", method="POST")
+            input(class="input", type="text", placeholder="username", name="username")
+            input(class="input", type="password", placeholder="********", name="password")
+
+            input(class="button is-link", type="submit", value="Signup")

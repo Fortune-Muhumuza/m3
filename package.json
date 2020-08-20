@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "body-parser": "^1.19.0",
+    "build-url": "^2.0.0",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "lastfm": "^0.9.3",
+    "mongoose": "^5.10.0",
+    "morgan": "^1.10.0",
+    "pug": "^2.0.4"
+  }
+}

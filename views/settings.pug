@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1(class="title") settings
+
+    div(class="columns")
+        div(class="column")
+            h2(class="subtitle") account preferences
+                form(action="/settings", method="POST", autocomplete="off")
+                    input(class="input", type="text", value=user.username, name="username")
+                    input(class="input", type="password", placeholder="Password", name="password")
+                    input(class="input", type="password", placeholder="Confirm Password" name="password2")
+                    textarea(class="textarea", rows="5", placeholder="Bio", name="bio") !{user.bio}
+                    
+                    input(class="button is-link", type="submit", value="Save")
+
+    div(class="columns")
+        div(class="column")
+            a(href="/deactivate")
+                input(class="button is-danger", type="submit", value="Deactiate your account")
